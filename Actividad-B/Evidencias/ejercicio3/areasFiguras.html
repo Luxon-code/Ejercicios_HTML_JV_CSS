@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas de figuras</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div id="encabezado">
+        <br><br><b>EJERCICIO DE CALCULO AREAS FIGURAS GEOMETRICAS</b>
+    </div>
+    <div id="opciones">
+        <br><br><button onclick="irCuadrado()">Area Cuadrado</button><br><br>
+        <button onclick="irTriangulo()">Area Triangulo</button><br><br>
+        <button onclick="irCirculo()">Area Circulo</button><br><br>
+    </div>
+    <div id="contenido">
+        <h3>La siguiente aplicacion le permite calcular el area tres figuras geometricas como: Cuadrado,Triangulo y Circulo</h3>
+        <div id="cua" style="display: none;">
+            <table id="cuadrado" align="center">
+                <thead>
+                    <tr>
+                        <th colspan="2">Area Cuadrado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <img src="img/cuadrado.png" title="Cuadrado">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Lado:</b></td>
+                        <td><input type="number" id="txtLado"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total:</b></td>
+                        <td><input type="number" id="txtTotal1" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="areaCuadrado()">Calcular</button>
+                            <button onclick="limpiar()">Limpiar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tri" style="display: none;">
+            <table id="triangulo" align="center">
+                <thead>
+                    <tr>
+                        <th colspan="2">Area Triangulo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <img src="img/triangulo.png" title="Triangulo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Base:</b></td>
+                        <td><input type="number" id="txtBase"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Altura:</b></td>
+                        <td><input type="number" id="txtAltura"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total:</b></td>
+                        <td><input type="number" id="txtTotal2" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="areaTriangulo()">Calcular</button>
+                            <button onclick="limpiar()">Limpiar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cir" style="display: none;">
+            <table id="circulo" align="center">
+                <thead>
+                    <tr>
+                        <th colspan="2">Area Circulo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <img src="img/circulo.png" title="Circulo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Radio:</b></td>
+                        <td><input type="number" id="txtRadio"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total:</b></td>
+                        <td><input type="number" id="txtTotal3" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="areaCirculo()">Calcular</button>
+                            <button onclick="limpiar()">Limpiar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="piePagina">
+        <br><br><b>Ejercicio desarrollado ADSO 2449133  Nombre: Joseph Trujillo</b>
+    </div>
+</body>
+</html>

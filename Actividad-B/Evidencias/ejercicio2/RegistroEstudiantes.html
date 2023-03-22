@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiantes</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <table align="center" border="1">
+        <thead>
+            <tr>
+                <th>REGISTRO DE ESTUDIANTES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="txtIdentificacion">Identificacion:</label><br>
+                    <input type="text" id="txtIdentificacion" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtNombre">Nombre Completo:</label><br>
+                    <input type="text" id="txtNombre" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtCorreo">Correo:</label><br>
+                    <input type="email" id="txtCorreo" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cbCurso">Seleccione Curso:</label><br>
+                    <select id="cbCurso" required>
+                        <option value=0>Seleccione</option>
+                        <option value="ADSO">ADSO</option>
+                        <option value="MULTIMEDIA">MULTIMEDIA</option>
+                        <option value="VIDEOJUEGOS">VIDEO JUEGOS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <button id="Registrar" onclick="registrar()">Registrar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3 align="center">LISTADO ESTUDIANTES</h3>
+    <div id="datos" align="center">
+        <table border="1">
+            <thead>
+                <th>Identificacion</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Curso</th>
+            </thead>
+            <tbody id="filas">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

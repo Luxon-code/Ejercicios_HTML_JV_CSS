@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+    <script>
+        function Calcular(){
+            let Precio = document.getElementById("txtPrecio").value;
+            let Cantidad = document.getElementById("txtCantidad").value;
+            let iva = Precio * Cantidad * 19/100;
+            let total =(Precio*Cantidad)+iva;
+
+            //alert("IVA = "+iva);
+            document.getElementById("txtIva").value=iva;
+            document.getElementById("txtTotal").value=total;
+        }
+        function Limpiar(){
+            document.getElementById("txtNombre").value="";
+            document.getElementById("txtCantidad").value="";
+            document.getElementById("txtTotal").value="";
+            document.getElementById("txtPrecio").value="";
+            document.getElementById("txtIva").value="";
+        }
+    </script>
+</head>
+<body>
+    <table align="center" border="2">
+        <thead bgcolor="#1F51FF,#0FF0FC">
+            <tr>
+                <th colspan="2">PRODUCTO</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="#BC13FE, #8A2BE2">
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" id="txtNombre"></td>
+            </tr>
+            <tr>
+                <td>Precio:</td>
+                <td><input type="number" id="txtPrecio"></td>
+            </tr>
+            <tr>
+                <td>Cantidad:</td>
+                <td><input type="number" id="txtCantidad"></td>
+            </tr>
+            <tr>
+                <td>Iva:</td>
+                <td><input type="number" id="txtIva" readonly></td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td><input type="number" id="txtTotal" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button onclick="Calcular()">Calcular</button>
+                    <button onclick="Limpiar()">Limpiar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

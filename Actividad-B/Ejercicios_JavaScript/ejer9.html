@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>FECHA Y HORA ACTUAL</h3>
+    <div id="fechaActual">
+
+    </div>
+    <div>
+        MES:
+        <span id="mes"></span>
+    </div>
+    <div>
+        DIA:
+        <span id="dia"></span>
+    </div>
+    <script>
+        let fecha = new Date();
+        document.getElementById("fechaActual").innerHTML=fecha;
+        const meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        let mes = meses[fecha.getMonth()];
+        document.getElementById("mes").innerHTML=mes;
+        const dias = ["Domingo","Lunes","Martes","Miercoles","Jueves","viernes","sabado"];
+        let dia = dias[fecha.getDay()];
+        document.getElementById("dia").innerHTML=dia;
+    </script>
+</body>
+</html>

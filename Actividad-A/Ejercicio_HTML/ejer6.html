@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>USO DE FORMULARIOS</h1>
+    <h2>Mi primer formulario</h2>
+    <form action="">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" name="txtNombre">
+        <br><br>
+        <label for="txtFechaNacimiento">Fecha de nacimento:</label>
+        <input type="date" name="txtFechaNacimiento">
+        <br><br>
+        <label for="cbCiudad">Ciudad Nacimiento:</label>
+        <select name="cbCiudad" id="">
+            <option value="0">Seleccione</option>
+            <option value="Neiva">Neiva</option>
+            <option value="Cali">Cali</option>
+            <option value="Bogota">Bogota</option>
+        </select>
+        <br><br>
+        <label for="txtCorreo">Correo electronico:</label>
+        <input type="email" name="txtCorreo">
+        <br><br>
+        <label for="txtDescripcion">Descripcion personal:</label><br>
+        <textarea name="txtDescripcion" rows="10" cols="30"></textarea>
+        <br><br>
+        <input type="password" name="txtPassword" placeholder="Ingrese su contraseña">
+        <br><br>
+        <label for="txtEdad">Edad:</label>
+        <input type="number" name="txtEdad">
+        <br><br>
+        <label for="filefoto">Cargue foto:</label>
+        <input type="file" name="filefoto">
+        <br><br>
+        <label for="txtGenero">Genero:</label><br>
+        <input type="radio" name="txtGenero">Femenino <br>
+        <input type="radio" name="txtGenero">Masculino <br><br>
+        <label for="txtDeporte">Deporte:</label><br>
+        <input type="checkbox" name="txtDeporte">Futbol <br>
+        <input type="checkbox" name="txtDeporte">Basquetbol <br> <br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+
+</html>
